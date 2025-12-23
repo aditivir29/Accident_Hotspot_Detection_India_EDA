@@ -1,6 +1,3 @@
-# Accident_Hotspot_Detection_India_EDA
-Exploratory data analysis of Indian road accident data to study accident patterns and assess the feasibility of hotspot detection using limited real world data.
-
 # Accident Hotspot Detection in India
 
 ## Project Overview
@@ -12,10 +9,16 @@ The project is implemented using Python in a Jupyter Notebook and emphasizes ana
 The primary objective of this project is to analyze road accident data in India and determine whether meaningful accident hotspots can be identified using publicly available datasets. A key goal is to understand how data granularity affects hotspot prediction and to identify gaps that limit precise spatial analysis.
 
 ## Data Source
-The dataset used in this project is derived from the Ministry of Road Transport and Highways (MoRTH), Government of India, based on the Road Accidents in India 2023 report.
+The data used in this project is sourced from the Ministry of Road Transport and Highways (MoRTH), Government of India.  
+It is based on the official publication:
+
+Road Accidents in India 2023 Report  
+Ministry of Road Transport and Highways, Government of India
+
+The report provides aggregated national and state level statistics on road accidents, fatalities, and injuries across multiple dimensions such as human factors, weather conditions, road categories, and temporal distribution.
 
 ## Dataset Description
-The project uses multiple CSV files containing aggregated accident statistics, including:
+The project uses multiple CSV files extracted and organized from the MoRTH 2023 report, including:
 - State wise road accident counts
 - Accident hotspot indicators at the state level
 - Human factor related accident and fatality data
@@ -56,54 +59,39 @@ accident-hotspot-detection-india
 └── .gitignore  
 
 ## Workflow and Steps
-The analysis in the notebook follows a clear and structured workflow:
 
 ### Step 1 Data Collection
-Multiple datasets related to road accidents were collected from the MoRTH 2023 report. Each dataset represents a different dimension of accident analysis such as state distribution, human factors, weather conditions, and road characteristics.
+Accident related datasets were compiled from the Road Accidents in India 2023 report published by MoRTH. Each dataset represents a different analytical dimension such as state wise distribution, human factors, weather conditions, road characteristics, and temporal trends.
 
 ### Step 2 Data Loading and Inspection
 - Loaded all datasets using Pandas
-- Inspected data shapes, column names, and data types
-- Checked for missing values and inconsistencies
+- Inspected data structure, column names, and data types
+- Checked for missing values and reporting inconsistencies
 
 ### Step 3 Data Cleaning and Preparation
-- Renamed columns for clarity
-- Ensured consistency in categorical values
-- Selected relevant columns for analysis
-- Prepared data for visualization
+- Renamed columns for clarity and consistency
+- Selected relevant attributes for analysis
+- Prepared datasets for visualization and comparison
 
 ### Step 4 Exploratory Data Analysis
-The EDA was conducted across multiple dimensions:
+EDA was conducted across multiple dimensions:
 
-#### State Wise Analysis
-- Analyzed accident counts across Indian states
-- Identified states with higher reported accident frequencies
+State Wise Analysis  
+Human Factors Analysis  
+Weather Condition Analysis  
+Road Category and Road Feature Analysis  
+Temporal Analysis
 
-#### Human Factors Analysis
-- Studied accidents and fatalities caused by human related factors
-- Compared national level and highway specific impacts
-- Visualized relationships between human factors and accident severity
-
-#### Weather Condition Analysis
-- Analyzed accident patterns under different weather conditions
-- Compared accident counts, fatalities, and injuries
-- Visualized weather related risk patterns
-
-#### Road Category and Road Feature Analysis
-- Examined accidents across road categories and road features
-- Analyzed fatality and injury trends for different road types
-
-#### Temporal Analysis
-- Analyzed month wise accident and fatality trends
-- Observed seasonal variations in accident occurrence
+Each analysis focused on identifying patterns, variations, and anomalies in accident distribution.
 
 ### Step 5 Visualization
-- Created bar charts and comparative plots to highlight patterns
-- Saved key visual outputs for interpretation and reporting
+- Created bar charts and comparative plots
+- Visualized accident counts, fatalities, and injuries across categories
+- Saved key visual outputs for interpretation
 
 ### Step 6 Interpretation and Insights
-- Interpreted observed patterns in relation to data limitations
-- Evaluated the feasibility of hotspot detection using aggregated data
+- Interpreted observed patterns in the context of data limitations
+- Assessed the feasibility of hotspot detection using aggregated data
 
 ## Key Insights
 - Accident patterns vary significantly across states and contributing factors
